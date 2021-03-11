@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function AgendaScreen() {
+export default function ProfileScreen() {
     return (
         <View>
-            <Text>Agenda y seguimiento del taller!!!</Text>
+            <Text>Pagina de Profile!!!</Text>
         </View>
     )
 }
