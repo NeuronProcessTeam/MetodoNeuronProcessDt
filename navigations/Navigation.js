@@ -15,32 +15,6 @@ const Tab = createBottomTabNavigator()
 
 export default function Navigation() {
 
-   const screenOptions = (route, color) =>{
-      let iconName
-      switch (route.name) {
-         case "LogIn":
-            iconName= "account-check-outline"
-            break;
-         case "SignUP":
-            iconName= "account-plus-outline"
-            break;
-         case "Home":
-            iconName= "home-outline"
-            break;
-         case "Profile":
-            iconName= "account-outline"
-            break;
-         case "Encuesta":
-            iconName= "chart-box-outline"
-            break;
-         case "Agenda":
-            iconName= "book-check-outline"
-            break;
-      
-      }
-
-
-   }
 
     return (
         <NavigationContainer>
