@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
     },
     text: {
+        color:"#fff",
         marginHorizontal: 30,
         marginTop: 40,
         marginBottom: 20,
