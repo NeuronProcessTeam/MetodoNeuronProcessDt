@@ -13,9 +13,9 @@ export default function Account() {
         setLogin = isUserLogged()
     }, [])
 
-   // if  (login == null) {
+   if  (login == null) {
         return <Loading isVisible={true} text= "Cargando..."/>
-    //}
+    }
 
     return  login ? <UserGuest/> : <UserLogged/> 
 }
