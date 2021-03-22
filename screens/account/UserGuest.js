@@ -1,7 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity } from 'react-native'
 
+import {useNavigation} from '@react-navigation/native'
+import {Button} from 'react-native-elements'
+
 export default function UserGuest() {
+    const navigation= useNavigation( )
     return (
         <ScrollView
             centerContent={true}
@@ -15,11 +19,11 @@ export default function UserGuest() {
             />
             <Text style={styles.text}>Ingresa a tu cuenta y desbloquea todo el poder de NeuronProcess </Text>
 
-            <TouchableOpacity 
-            style={styles.button}
-            >
-            <Text>Iniciar Sesion</Text>
-          </TouchableOpacity>
+           <Button
+               buttonStyle={styles.button}
+               title="Ver Perfil"
+               onPress={() => navigation.navigate("login")}
+           />
 
         </ScrollView>
     )
