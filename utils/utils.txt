@@ -1,0 +1,35 @@
+// Instalacion de navigation
+
+sudo yarn add @react-navigation/native
+sudo expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+
+// agregando navegacion
+
+sudo yarn add @react-navigation/bottom-tabs
+sudo yarn add @react-navigation/drawer
+sudo yarn add @react-navigation/stack
+
+
+// agregando react native elements
+
+sudo yarn add react-native-elements
+
+
+//Firebase
+
+sudo expo install firebase
+
+
+
+
+
+
+//errores
+
+// error de limite de lecturas
+
+echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances && watchman shutdown-server && sudo sysctl -p
+
+
+
