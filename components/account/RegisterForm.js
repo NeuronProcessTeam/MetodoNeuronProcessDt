@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Input, Button} from 'react-native-elements'
-import {} from 'react-native-keyboard-aware-scroll-view'
+import { Input, Button, Icon} from 'react-native-elements'
 
 export default function RegisterForm() {
+    const  [ showPassword, setShowPassword ] = React.useState(false)
+
     return (
         <View style={styles.form}>
             <Input
@@ -15,6 +16,14 @@ export default function RegisterForm() {
                 placeholder="Ingresa tu password..."
                 password={true}
                 secureTextEntry={true}
+                rightIcon={
+                    <Icon
+                        type="material-community"
+                        name={ showPassword ? "eye-off-outline" : "eye-outline"}
+                        iconStyle={styles.icon}
+                        onPress={() => setShowPassword( !showPassword )}
+                    />
+                }
             />
 
             <Input
@@ -22,6 +31,14 @@ export default function RegisterForm() {
                 placeholder="Confirma tu password..."
                 password={true}
                 secureTextEntry={true}
+                rightIcon={
+                    <Icon
+                        type="material-community"
+                        name="eye-outline"
+                        iconStyle={styles.icon}
+                    />
+                }
+                
             />
             <Button
                 title="Registrar Nuevo Usuario"
@@ -53,8 +70,10 @@ const styles = StyleSheet.create({
     btn:{
         backgroundColor: "rgb(194, 187, 240)",
         borderRadius: 10,
+    },
 
-
+    icon:{
+        color: "#D6D0CE",
 
     }
 })

@@ -21,6 +21,10 @@ sudo yarn add react-native-elements
 sudo expo install firebase
 
 
+//keyboard scroll
+
+sudo yarn add react-native-keyboard-aware-scroll-view
+
 
 
 

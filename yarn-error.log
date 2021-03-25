@@ -1,20 +1,20 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add react-native-keyboard-aware-scroll-view
+  /usr/bin/node /usr/bin/yarn add react-native-keyboard-aware-scroll-view
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/JarvisMac/Tools/flutter/bin
+  /usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/Jarvis/bin:/var/lib/snapd/snap/bin
 
 Yarn version: 
   1.22.10
 
 Node version: 
-  12.19.0
+  15.12.0
 
 Platform: 
-  darwin x64
+  linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/JarvisMac/Documents/NeuronReact/MetodoNeuronProcessDt/node_modules/@babel/helper-compilation-targets/node_modules/semver/CHANGELOG.md'
+  Error: EACCES: permission denied, unlink '/home/Jarvis/Documentos/NeuronP/Code/MetodoNeuronProcessDt/node_modules/@babel/plugin-proposal-class-properties/node_modules/@babel/helper-compilation-targets/node_modules/@babel/core/node_modules/semver/CHANGELOG.md'
 
 npm manifest: 
   {
@@ -38,8 +38,9 @@ npm manifest:
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-      "react-native-elements": "^3.3.1",
+      "react-native-elements": "^3.3.2",
       "react-native-gesture-handler": "~1.8.0",
+      "react-native-keyboard-aware-scroll-view": "^0.9.3",
       "react-native-reanimated": "~1.13.0",
       "react-native-safe-area-context": "3.1.9",
       "react-native-screens": "~2.15.2",
@@ -6131,10 +6132,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
     integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
   
-  react-native-elements@^3.3.1:
-    version "3.3.1"
-    resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-3.3.1.tgz#954776f8db15df60febb7599c06f6746ccd31d5c"
-    integrity sha512-vK6GVliIQMbwNpNxRRyqFTb5ErrSN7+a2VxBUN5cqSu9B8rWG862M/lv9oWplkFOlPkL/a2xkzruoWSoN8HNhw==
+  react-native-elements@^3.3.2:
+    version "3.3.2"
+    resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-3.3.2.tgz#42cc05c90a5c85c8aee95ce363bce0c5a39fe633"
+    integrity sha512-bDWQt0WEuJEOrwzSYx0mVBV3aoRtJAsK0Kc2sioMsshSEhPOZK17Ccx+EvLBSpZ9uWxPyx42Z7hUH/8dQNu67g==
     dependencies:
       "@types/react-native-vector-icons" "^6.4.6"
       color "^3.1.2"
@@ -6155,10 +6156,18 @@ Lockfile:
       invariant "^2.2.4"
       prop-types "^15.7.2"
   
-  react-native-iphone-x-helper@^1.3.0:
+  react-native-iphone-x-helper@^1.0.3, react-native-iphone-x-helper@^1.3.0:
     version "1.3.1"
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
     integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
+  
+  react-native-keyboard-aware-scroll-view@^0.9.3:
+    version "0.9.3"
+    resolved "https://registry.yarnpkg.com/react-native-keyboard-aware-scroll-view/-/react-native-keyboard-aware-scroll-view-0.9.3.tgz#65ab4cab1a987b486d97924602756fa88b7fbfcc"
+    integrity sha512-EDyFp8wAJoKvi1T2pzoPRn8R0Inp3G+575jPAWEFTlXq26URMmk8760rzde2XLW+v/1+QwDyBg6d/5mz63/ZRA==
+    dependencies:
+      prop-types "^15.6.2"
+      react-native-iphone-x-helper "^1.0.3"
   
   react-native-ratings@^7.3.0:
     version "7.4.0"
