@@ -15,13 +15,13 @@ export default function RegisterForm() {
                 containerStyle={styles.input}
                 placeholder="Ingresa tu password..."
                 password={true}
-                secureTextEntry={true}
+                secureTextEntry={!showPassword}
                 rightIcon={
                     <Icon
                         type="material-community"
                         name={ showPassword ? "eye-off-outline" : "eye-outline"}
                         iconStyle={styles.icon}
-                        onPress={() => setShowPassword( !showPassword )}
+                        onPress={() => setShowPassword( ! showPassword )}
                     />
                 }
             />
@@ -30,12 +30,13 @@ export default function RegisterForm() {
                 containerStyle={styles.input}
                 placeholder="Confirma tu password..."
                 password={true}
-                secureTextEntry={true}
+                secureTextEntry={!showPassword}
                 rightIcon={
                     <Icon
-                        type="material-community"
-                        name="eye-outline"
-                        iconStyle={styles.icon}
+                    type="material-community"
+                    name={ showPassword ? "eye-off-outline" : "eye-outline"}
+                    iconStyle={styles.icon}
+                    onPress={() => setShowPassword( ! showPassword )}
                     />
                 }
                 
