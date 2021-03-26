@@ -1,6 +1,6 @@
 import React from 'react'
 import{ createStackNavigator } from '@react-navigation/stack'
-import Agenda from '../screens/Agenda'
+import Agenda from '../screens/agenda/Agenda'
 
 const Stack = createStackNavigator()
 
