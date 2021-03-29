@@ -26,6 +26,11 @@ sudo expo install firebase
 sudo yarn add react-native-keyboard-aware-scroll-view
 
 
+//lodash
+
+sudo yarn add lodash
+
+
 
 
 

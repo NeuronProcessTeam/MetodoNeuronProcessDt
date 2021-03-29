@@ -22,7 +22,7 @@ export default function Agenda() {
 
            <Button
                buttonStyle={styles.button}
-               title="Ver Perfil"
+               title="Comienza aqui..."
            />
 
         </ScrollView>

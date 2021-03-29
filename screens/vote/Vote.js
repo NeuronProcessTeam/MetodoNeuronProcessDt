@@ -14,11 +14,11 @@ export default function Vote() {
             resizeMode='contain'
             style={styles.image}
         />
-        <Text style={styles.text}> BIENVENIDO A TU TALLER NEURON PROCESS</Text>
+        <Text style={styles.text}> AQUI TU OPINION ES LO MAS IMPORTANTE</Text>
 
        <Button
            buttonStyle={styles.button}
-           title="Ver Perfil"
+           title="... a votar"
        />
 
     </ScrollView>

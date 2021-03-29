@@ -6,20 +6,22 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <ScrollView style={styles.ScrollView}>
+            <Image style={styles.Image}
+                source={require('../assets/image/quees.jpg')}>
+                </Image>
+                <Text style={styles.Titulo}>¿QUE ES EL METODO NEURON PROCESS?</Text>
+                <Text style={styles.parrafo}>El metodo que hemos incubado para resolver problemas.
+                Utiliza herramientas de desing thinking. Evoluciona constantemente</Text>
+                
                 <Image style={styles.Image}
                 source={require('../assets/image/porque.jpg')}
                 ></Image>
                 <Text style={styles.Titulo}>¿PORQUE EL METODO NEURON PROCESS?</Text>
-                <Text style={styles.parrafo}>Desarrollo para nuestra cultura por expertos en 
-                procesos creativos divertido, informal para resolver problemas</Text>
+                <Text style={styles.parrafo}>Desarrollado para nuestra cultura por expertos en 
+                procesos creativos, divertido e informal para resolver problemas</Text>
                 
                 
-                <Image style={styles.Image}
-                source={require('../assets/image/quees.jpg')}>
-                </Image>
-                <Text style={styles.Titulo}>¿QUE ES EL METODO NEURON PROCESS?</Text>
-                <Text style={styles.parrafo}>El metodo que hemos incubado para resolver problemas
-                Utiliza herramientas de desing thinking. Evoluciona constantemente</Text>
+                
 
                 <Text style={styles.Titulo}>ACERCA DE...</Text>
                 <Image style={styles.Image}
