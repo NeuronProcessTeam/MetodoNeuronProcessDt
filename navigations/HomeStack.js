@@ -8,7 +8,7 @@ export default function HomeStack() {
     return (
        <Stack.Navigator>
            <Stack.Screen
-                name="Home"
+                name="home"
                 component={Home}
                 options={{title: "Inicio"}} 
            />

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Overlay } from 'react-native-elements'
 
 export default function Loading() {
-    let isVisible,text = "Cargando..."
+    let isVisible=false,text = "Cargando..."
     return (
         <Overlay
             isVisible={isVisible}
